@@ -16,16 +16,16 @@ public class Excercise7 {
 		String someColor = "Red";
 		
 		if (colors.contains(someColor)) {
-			System.out.println("The color " + someColor + " index is " + colors.indexOf(someColor));
+			System.out.println("The color \"" + someColor + "\" index is " + colors.indexOf(someColor));
 		} else {
-			System.out.println("The color " + someColor + " is not in the list");
+			System.out.println("The color \"" + someColor + "\" is not in the list");
 		}
 		
 		someColor = "Blue";
 		if (colors.contains(someColor)) {
-			System.out.println("The index of color " + someColor + " is " + colors.indexOf(someColor));
+			System.out.println("The index of color \"" + someColor + "\" is " + colors.indexOf(someColor));
 		} else {
-			System.out.println("The color " + someColor + " is not in the list");
+			System.out.println("The color \"" + someColor + "\" is not in the list");
 		}
 		
 	}

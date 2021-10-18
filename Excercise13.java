@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Excercise13 {
 
-	// compare if each element of two lists are equals
+	// compare if each corresponding element of two lists are equals
 
 	public static void main(String[] args) {
 
@@ -23,27 +23,34 @@ public class Excercise13 {
 		colors2.add("Orange");
 		colors2.add("Black");
 		colors2.add("White");
+//		colors2.add("White");
 
+		System.out.println(colors1);
+		System.out.println(colors2);
+		System.out.println(areEqual(colors1, colors2));
+
+	}
+
+	public static ArrayList<Boolean> areEqual(ArrayList<String> arrL1, ArrayList<String> arrL2) {
 		ArrayList<Boolean> areEqual = new ArrayList<>();
 
 		Integer size;
 
-		if (colors1.size() != colors2.size()) {
+		if (arrL1.size() != arrL2.size()) {
 			System.out.println("Array lists are not of equal size");
+			areEqual.add(null);
+//			return null;
 		} else {
-			size = colors1.size();
+			size = arrL1.size();
 			for (int i = 0; i < size; i++) {
-				if (colors1.get(i) == colors2.get(i))
+				if (arrL1.get(i) == arrL2.get(i))
 					areEqual.add(i, true);
 				else
 					areEqual.add(i, false);
 			}
-
 		}
-		
-		System.out.println(colors1);
-		System.out.println(colors2);
-		System.out.println(areEqual);
 
+		return areEqual;
 	}
+
 }
