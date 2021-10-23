@@ -2,11 +2,11 @@ package loopsExamples;
 
 public class CharTriangles {
 	
-//	*				*		00	01	02	03	04			*		1  star		 2 stars		**
-//	**			   **		10	11	12	13	14		   ***		3 stars		 4 stars	   ****		
-//	***			  ***		20	21	22	23	24		  *****		5 stars		 6 stars	  ******
-//	****		 ****		30	31	32	33	34		 *******	7 stars		 8 stars	 ********
-//	*****		*****		40	41	42	43	44		*********	9 stars		10 stars	**********
+//	*		*		00	01	02	03	04		    *		1  star		 2 stars	    **
+//	**	       **		10	11	12	13	14		   ***		3 stars		 4 stars	   ****		
+//	***	      ***		20	21	22	23	24		  *****		5 stars		 6 stars	  ******
+//	****	     ****		30	31	32	33	34		 *******	7 stars		 8 stars	 ********
+//	*****	    *****		40	41	42	43	44		*********	9 stars		10 stars	**********
 
 	public static void main(String[] args) {
 		
