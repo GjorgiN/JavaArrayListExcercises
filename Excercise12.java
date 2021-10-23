@@ -28,8 +28,9 @@ public class Excercise12 {
 
 		ArrayList<String> worstColors = new ArrayList<>();
 		
-		// Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 0
-		copyRangeOfElements(colors, 3, 5);
+		// if .set is used on row 46 --> Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 0
+		// cannot set elements to array list of size 0
+		worstColors = copyRangeOfElements(colors, 3, 5);
 
 		System.out.println(worstColors);
 
@@ -42,7 +43,7 @@ public class Excercise12 {
 
 		if (size > start) {
 			for (Integer i = start; i < end; i++) {
-				range.set(i, arrL.get(i));
+				range.add(arrL.get(i));
 			}
 		}
 
